@@ -1,0 +1,12 @@
+AR lab4_proj1 behavioral C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.vhd sub00/vhpl03 1713300085
+AR relogio behavioral C:/VitoriaG/Microeletronica_1/lab4_proj1/contador.vhd sub00/vhpl07 1713467253
+EN codificador_bcd NULL C:/VitoriaG/Microeletronica_1/lab4_proj1/codificador_bcd.vhd sub00/vhpl00 1713300082
+EN lab4_proj1 NULL C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.vhd sub00/vhpl02 1713300084
+EN decodificador NULL C:/VitoriaG/Microeletronica_1/lab4_proj1/codificador_bcd.vhd sub00/vhpl08 1713467254
+AR lab4_1 behavioral C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.vhd sub00/vhpl11 1713467257
+EN lab4_1 NULL C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.vhd sub00/vhpl10 1713467256
+EN contador NULL C:/VitoriaG/Microeletronica_1/lab4_proj1/contador.vhd sub00/vhpl04 1713299758
+AR codificador_bcd behavioral C:/VitoriaG/Microeletronica_1/lab4_proj1/codificador_bcd.vhd sub00/vhpl01 1713300083
+EN relogio NULL C:/VitoriaG/Microeletronica_1/lab4_proj1/contador.vhd sub00/vhpl06 1713467252
+AR decodificador behavioral C:/VitoriaG/Microeletronica_1/lab4_proj1/codificador_bcd.vhd sub00/vhpl09 1713467255
+AR contador behavioral C:/VitoriaG/Microeletronica_1/lab4_proj1/contador.vhd sub00/vhpl05 1713299759

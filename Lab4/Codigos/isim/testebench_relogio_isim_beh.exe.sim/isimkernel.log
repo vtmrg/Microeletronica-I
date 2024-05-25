@@ -1,0 +1,30 @@
+Command line:
+   testebench_relogio_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63658
+
+Thu Apr 18 16:18:52 2024
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5150.06 Meg
+
+ Total Signals          : 31
+ Total Nets             : 26
+ Total Signal Drivers   : 13
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 6
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 512
+Total Line Count : 59
+Total Line Count : 59
+
+ Total Simulation Time: 17.5 sec
+
+ Current Memory Usage: 4678.21 Meg
+
+Thu Apr 18 18:37:45 2024
+

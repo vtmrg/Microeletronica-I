@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/VitoriaG/Microeletronica_1/lab4_proj1/testebench_relogio_isim_beh.exe" -prj "C:/VitoriaG/Microeletronica_1/lab4_proj1/testebench_relogio_beh.prj" "work.testebench_relogio" 

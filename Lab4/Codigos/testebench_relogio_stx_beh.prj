@@ -1,0 +1,4 @@
+vhdl isim_temp "contador.vhd"
+vhdl isim_temp "codificador_bcd.vhd"
+vhdl isim_temp "lab4_proj1.vhd"
+vhdl isim_temp "testebench_relogio.vhd"

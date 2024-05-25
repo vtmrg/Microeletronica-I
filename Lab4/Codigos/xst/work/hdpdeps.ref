@@ -1,0 +1,21 @@
+V3 11
+FL C:/VitoriaG/Microeletronica_1/lab4_proj1/codificador_bcd.vhd 2024/04/18.15:34:39 P.20131013
+EN work/decodificador 1713467254 \
+      FL C:/VitoriaG/Microeletronica_1/lab4_proj1/codificador_bcd.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/decodificador/Behavioral 1713467255 \
+      FL C:/VitoriaG/Microeletronica_1/lab4_proj1/codificador_bcd.vhd \
+      EN work/decodificador 1713467254
+FL C:/VitoriaG/Microeletronica_1/lab4_proj1/contador.vhd 2024/04/18.15:50:19 P.20131013
+EN work/relogio 1713467252 \
+      FL C:/VitoriaG/Microeletronica_1/lab4_proj1/contador.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/relogio/Behavioral 1713467253 \
+      FL C:/VitoriaG/Microeletronica_1/lab4_proj1/contador.vhd EN work/relogio 1713467252
+FL C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.vhd 2024/04/18.16:07:27 P.20131013
+EN work/lab4_1 1713467256 \
+      FL C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/lab4_1/Behavioral 1713467257 \
+      FL C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.vhd EN work/lab4_1 1713467256 \
+      CP relogio CP decodificador

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/projeto2/projeto2.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/projeto2/projeto2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 projeto2.ngc projeto2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto2_map.ncd projeto2.ngd projeto2.pcf 
+par -w -intstyle ise -ol high -t 1 projeto2_map.ncd projeto2.ncd projeto2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto2.twx projeto2.ncd -o projeto2.twr projeto2.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f projeto2.ut projeto2.ncd 

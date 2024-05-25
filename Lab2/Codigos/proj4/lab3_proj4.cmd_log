@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj4/lab3_proj4.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj4/lab3_proj4.syr" 
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj4/lab3_proj4.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj4/lab3_proj4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab3_proj4.ngc lab3_proj4.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab3_proj4_map.ncd lab3_proj4.ngd lab3_proj4.pcf 
+par -w -intstyle ise -ol high -t 1 lab3_proj4_map.ncd lab3_proj4.ncd lab3_proj4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab3_proj4.twx lab3_proj4.ncd -o lab3_proj4.twr lab3_proj4.pcf -ucf pinos.ucf 
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj4/lab3_proj4.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj4/lab3_proj4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab3_proj4.ngc lab3_proj4.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab3_proj4_map.ncd lab3_proj4.ngd lab3_proj4.pcf 
+par -w -intstyle ise -ol high -t 1 lab3_proj4_map.ncd lab3_proj4.ncd lab3_proj4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab3_proj4.twx lab3_proj4.ncd -o lab3_proj4.twr lab3_proj4.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f lab3_proj4.ut lab3_proj4.ncd 

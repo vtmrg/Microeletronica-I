@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Aluno/Documents/Microeletronica2024/projeto2/testebench_isim_beh.exe" -prj "C:/Users/Aluno/Documents/Microeletronica2024/projeto2/testebench_beh.prj" "work.testebench" 

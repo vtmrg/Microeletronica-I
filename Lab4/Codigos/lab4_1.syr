@@ -1,0 +1,539 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: lab4_1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lab4_1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lab4_1"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : lab4_1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/VitoriaG/Microeletronica_1/lab4_proj1/contador.vhd" in Library work.
+Architecture behavioral of Entity relogio is up to date.
+Compiling vhdl file "C:/VitoriaG/Microeletronica_1/lab4_proj1/codificador_bcd.vhd" in Library work.
+Architecture behavioral of Entity decodificador is up to date.
+Compiling vhdl file "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.vhd" in Library work.
+Entity <lab4_1> compiled.
+Entity <lab4_1> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <lab4_1> in library <work> (architecture <behavioral>) with generics.
+	clock_placa = 50
+
+Analyzing hierarchy for entity <relogio> in library <work> (architecture <behavioral>) with generics.
+	clock = 50
+
+Analyzing hierarchy for entity <decodificador> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <lab4_1> in library <work> (Architecture <behavioral>).
+	clock_placa = 50
+Entity <lab4_1> analyzed. Unit <lab4_1> generated.
+
+Analyzing generic Entity <relogio> in library <work> (Architecture <behavioral>).
+	clock = 50
+Entity <relogio> analyzed. Unit <relogio> generated.
+
+Analyzing Entity <decodificador> in library <work> (Architecture <behavioral>).
+Entity <decodificador> analyzed. Unit <decodificador> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <relogio>.
+    Related source file is "C:/VitoriaG/Microeletronica_1/lab4_proj1/contador.vhd".
+    Found 32-bit up counter for signal <contador>.
+    Found 32-bit up counter for signal <h0>.
+    Found 32-bit adder for signal <h0$add0000> created at line 46.
+    Found 32-bit up counter for signal <h1>.
+    Found 32-bit up counter for signal <m0>.
+    Found 32-bit adder for signal <m0$add0000> created at line 40.
+    Found 32-bit adder for signal <m0$add0001> created at line 37.
+    Found 32-bit adder for signal <m0$add0002> created at line 34.
+    Found 32-bit adder for signal <m0$add0003> created at line 32.
+    Found 32-bit up counter for signal <m1>.
+    Found 32-bit adder for signal <m1$add0000> created at line 43.
+    Found 32-bit up counter for signal <s0>.
+    Found 32-bit up counter for signal <s1>.
+    Summary:
+	inferred   7 Counter(s).
+	inferred   6 Adder/Subtractor(s).
+Unit <relogio> synthesized.
+
+
+Synthesizing Unit <decodificador>.
+    Related source file is "C:/VitoriaG/Microeletronica_1/lab4_proj1/codificador_bcd.vhd".
+Unit <decodificador> synthesized.
+
+
+Synthesizing Unit <lab4_1>.
+    Related source file is "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.vhd".
+WARNING:Xst:653 - Signal <s_int_1<3>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <m_int_1<3>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found finite state machine <FSM_0> for signal <contador_anodo>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | contador_anodo$cmp_eq0000 (positive)           |
+    | Power Up State     | 1110                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <a>.
+    Found 32-bit adder for signal <contador_anodo$addsub0000> created at line 65.
+    Found 32-bit up counter for signal <contador_x>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <lab4_1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 7
+# Counters                                             : 8
+ 32-bit up counter                                     : 8
+# Registers                                            : 1
+ 4-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <contador_anodo/FSM> on signal <contador_anodo[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 1110  | 1110
+ 1101  | 1101
+ 1011  | 1011
+ 0111  | 0111
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 7
+# Counters                                             : 8
+ 32-bit up counter                                     : 8
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <h1_2> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_3> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_4> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_5> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_6> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_7> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_8> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_9> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_10> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_11> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_12> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_13> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_14> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_15> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_16> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_17> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_18> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_19> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_20> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_21> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_22> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_23> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_24> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_25> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_26> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_27> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_28> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_29> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_30> of sequential type is unconnected in block <relogio>.
+WARNING:Xst:2677 - Node <h1_31> of sequential type is unconnected in block <relogio>.
+
+Optimizing unit <lab4_1> ...
+
+Optimizing unit <relogio> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lab4_1, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 234
+ Flip-Flops                                            : 234
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : lab4_1.ngr
+Top Level Output File Name         : lab4_1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 1683
+#      GND                         : 1
+#      INV                         : 16
+#      LUT1                        : 435
+#      LUT2                        : 193
+#      LUT3                        : 12
+#      LUT3_L                      : 1
+#      LUT4                        : 76
+#      LUT4_L                      : 1
+#      MUXCY                       : 491
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 450
+# FlipFlops/Latches                : 234
+#      FDCE                        : 194
+#      FDE                         : 8
+#      FDR                         : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 3
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      385  out of   4656     8%  
+ Number of Slice Flip Flops:            234  out of   9312     2%  
+ Number of 4 input LUTs:                734  out of   9312     7%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    232     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 234   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 194   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.010ns (Maximum Frequency: 90.828MHz)
+   Minimum input arrival time before clock: 5.683ns
+   Maximum output required time after clock: 9.400ns
+   Maximum combinational path delay: 8.749ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 11.010ns (frequency: 90.828MHz)
+  Total number of paths / destination ports: 385987 / 436
+-------------------------------------------------------------------------
+Delay:               11.010ns (Levels of Logic = 36)
+  Source:            cont_s/s0_1 (FF)
+  Destination:       cont_s/h0_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cont_s/s0_1 to cont_s/h0_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.514   0.603  cont_s/s0_1 (cont_s/s0_1)
+     LUT1:I0->O            1   0.612   0.000  cont_s/Madd_m0_add0002_cy<1>_rt (cont_s/Madd_m0_add0002_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  cont_s/Madd_m0_add0002_cy<1> (cont_s/Madd_m0_add0002_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<2> (cont_s/Madd_m0_add0002_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<3> (cont_s/Madd_m0_add0002_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<4> (cont_s/Madd_m0_add0002_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<5> (cont_s/Madd_m0_add0002_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<6> (cont_s/Madd_m0_add0002_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<7> (cont_s/Madd_m0_add0002_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<8> (cont_s/Madd_m0_add0002_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<9> (cont_s/Madd_m0_add0002_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<10> (cont_s/Madd_m0_add0002_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<11> (cont_s/Madd_m0_add0002_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<12> (cont_s/Madd_m0_add0002_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<13> (cont_s/Madd_m0_add0002_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<14> (cont_s/Madd_m0_add0002_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<15> (cont_s/Madd_m0_add0002_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<16> (cont_s/Madd_m0_add0002_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<17> (cont_s/Madd_m0_add0002_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<18> (cont_s/Madd_m0_add0002_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  cont_s/Madd_m0_add0002_cy<19> (cont_s/Madd_m0_add0002_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<20> (cont_s/Madd_m0_add0002_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<21> (cont_s/Madd_m0_add0002_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<22> (cont_s/Madd_m0_add0002_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<23> (cont_s/Madd_m0_add0002_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<24> (cont_s/Madd_m0_add0002_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<25> (cont_s/Madd_m0_add0002_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<26> (cont_s/Madd_m0_add0002_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<27> (cont_s/Madd_m0_add0002_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<28> (cont_s/Madd_m0_add0002_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  cont_s/Madd_m0_add0002_cy<29> (cont_s/Madd_m0_add0002_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  cont_s/Madd_m0_add0002_cy<30> (cont_s/Madd_m0_add0002_cy<30>)
+     XORCY:CI->O           1   0.699   0.360  cont_s/Madd_m0_add0002_xor<31> (cont_s/m0_add0002<31>)
+     LUT4:I3->O            1   0.612   0.000  cont_s/s0_cmp_eq0000_wg_lut<7> (cont_s/s0_cmp_eq0000_wg_lut<7>)
+     MUXCY:S->O           36   0.752   1.104  cont_s/s0_cmp_eq0000_wg_cy<7> (cont_s/s0_cmp_eq0000)
+     LUT3:I2->O           33   0.612   1.076  cont_s/h1_not0001111_1 (cont_s/h1_not0001111)
+     LUT4:I3->O           32   0.612   1.073  cont_s/h1_not000121 (cont_s/h0_not0001)
+     FDCE:CE                   0.483          cont_s/h0_0
+    ----------------------------------------
+    Total                     11.010ns (6.794ns logic, 4.216ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 194 / 194
+-------------------------------------------------------------------------
+Offset:              5.683ns (Levels of Logic = 3)
+  Source:            pausa (PAD)
+  Destination:       cont_s/h0_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: pausa to cont_s/h0_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.106   0.721  pausa_IBUF (pausa_IBUF)
+     LUT3:I0->O           33   0.612   1.076  cont_s/h1_not0001111_1 (cont_s/h1_not0001111)
+     LUT4:I3->O           32   0.612   1.073  cont_s/h1_not000121 (cont_s/h0_not0001)
+     FDCE:CE                   0.483          cont_s/h0_0
+    ----------------------------------------
+    Total                      5.683ns (2.813ns logic, 2.870ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 501 / 11
+-------------------------------------------------------------------------
+Offset:              9.400ns (Levels of Logic = 6)
+  Source:            contador_anodo_FSM_FFd4 (FF)
+  Destination:       y<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: contador_anodo_FSM_FFd4 to y<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.514   0.862  contador_anodo_FSM_FFd4 (contador_anodo_FSM_FFd4)
+     LUT4:I1->O            1   0.612   0.509  d_0<2>36 (d_0<2>36)
+     LUT3:I0->O            1   0.612   0.000  d_0<2>59_SW0_F (N12)
+     MUXF5:I0->O           1   0.278   0.509  d_0<2>59_SW0 (N4)
+     LUT3:I0->O            7   0.612   0.754  d_0<2>59 (d_0<2>)
+     LUT4:I0->O            1   0.612   0.357  d0/y<5>1 (y_5_OBUF)
+     OBUF:I->O                 3.169          y_5_OBUF (y<5>)
+    ----------------------------------------
+    Total                      9.400ns (6.409ns logic, 2.991ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 91 / 7
+-------------------------------------------------------------------------
+Delay:               8.749ns (Levels of Logic = 6)
+  Source:            modo (PAD)
+  Destination:       y<4> (PAD)
+
+  Data Path: modo to y<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.106   0.721  modo_IBUF (modo_IBUF)
+     LUT3:I0->O            4   0.612   0.529  d_0<0>11 (N01)
+     LUT3:I2->O            1   0.612   0.000  d_0<1>552 (d_0<1>551)
+     MUXF5:I0->O           7   0.278   0.754  d_0<1>55_f5 (d_0<1>)
+     LUT4:I0->O            1   0.612   0.357  d0/y<2>1 (y_2_OBUF)
+     OBUF:I->O                 3.169          y_2_OBUF (y<2>)
+    ----------------------------------------
+    Total                      8.749ns (6.389ns logic, 2.360ns route)
+                                       (73.0% logic, 27.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.28 secs
+ 
+--> 
+
+Total memory usage is 4529752 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,17 @@
+
+net "clk" loc = "B8";
+net "rst" loc = "G18";
+net "pausa" loc = "H18";
+
+net "y0(6)" loc = "L18";
+net "y0(5)" loc = "F18";
+net "y0(4)" loc = "D17";
+net "y0(3)" loc = "D16";
+net "y0(2)" loc = "G14";
+net "y0(1)" loc = "J17";
+net "y0(0)" loc = "H14";
+
+net "anodo(0)" loc = "F17";
+net "anodo(1)" loc = "H17";
+net "anodo(2)" loc = "C18";
+net "anodo(3)" loc = "F15";

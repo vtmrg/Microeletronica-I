@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj1/code_pt1.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj1/code_pt1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 code_pt1.ngc code_pt1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o code_pt1_map.ncd code_pt1.ngd code_pt1.pcf 
+par -w -intstyle ise -ol high -t 1 code_pt1_map.ncd code_pt1.ncd code_pt1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml code_pt1.twx code_pt1.ncd -o code_pt1.twr code_pt1.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f code_pt1.ut code_pt1.ncd 
+xst -intstyle ise -ifn "/home/lfilus/Lab_2/proj1/code_pt1.xst" -ofn "/home/lfilus/Lab_2/proj1/code_pt1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 code_pt1.ngc code_pt1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o code_pt1_map.ncd code_pt1.ngd code_pt1.pcf 
+par -w -intstyle ise -ol high -t 1 code_pt1_map.ncd code_pt1.ncd code_pt1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml code_pt1.twx code_pt1.ncd -o code_pt1.twr code_pt1.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f code_pt1.ut code_pt1.ncd 
+xst -intstyle ise -ifn "/home/lfilus/Lab_2/proj1/code_pt1.xst" -ofn "/home/lfilus/Lab_2/proj1/code_pt1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 code_pt1.ngc code_pt1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o code_pt1_map.ncd code_pt1.ngd code_pt1.pcf 
+par -w -intstyle ise -ol high -t 1 code_pt1_map.ncd code_pt1.ncd code_pt1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml code_pt1.twx code_pt1.ncd -o code_pt1.twr code_pt1.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f code_pt1.ut code_pt1.ncd 

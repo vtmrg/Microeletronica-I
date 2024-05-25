@@ -1,0 +1,19 @@
+
+NET "d(0)" loc = "G18";
+NET "d(1)" loc = "H18";
+NET "d(2)" loc = "K18";
+NET "d(3)" loc = "K17";
+
+NET "y(0)" loc = "H14";
+NET "y(1)" loc = "J17";
+NET "y(2)" loc = "G14";
+NET "y(3)" loc = "D16";
+NET "y(4)" loc = "D17";
+NET "y(5)" loc = "F18";
+NET "y(6)" loc = "L18";
+
+
+NET "a(0)" loc = "F17";
+NET "a(1)" loc = "H17";
+NET "a(2)" loc = "C18";
+NET "a(3)" loc = "F15";

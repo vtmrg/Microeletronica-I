@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab2_proj2.ngc lab2_proj2.ngd  
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab2_proj2.ngc lab2_proj2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab2_proj2_map.ncd lab2_proj2.ngd lab2_proj2.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_proj2_map.ncd lab2_proj2.ncd lab2_proj2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab2_proj2.twx lab2_proj2.ncd -o lab2_proj2.twr lab2_proj2.pcf -ucf pinos.ucf 
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab2_proj2.ngc lab2_proj2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab2_proj2_map.ncd lab2_proj2.ngd lab2_proj2.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_proj2_map.ncd lab2_proj2.ncd lab2_proj2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab2_proj2.twx lab2_proj2.ncd -o lab2_proj2.twr lab2_proj2.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f lab2_proj2.ut lab2_proj2.ncd 
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab2_proj2.ngc lab2_proj2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab2_proj2_map.ncd lab2_proj2.ngd lab2_proj2.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_proj2_map.ncd lab2_proj2.ncd lab2_proj2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab2_proj2.twx lab2_proj2.ncd -o lab2_proj2.twr lab2_proj2.pcf -ucf pinos.ucf 
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.syr" 
+xst -intstyle ise -ifn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.xst" -ofn "C:/Users/Aluno/Documents/Microeletronica2024/Lab_2/proj2/lab2_proj2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab2_proj2.ngc lab2_proj2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab2_proj2_map.ncd lab2_proj2.ngd lab2_proj2.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_proj2_map.ncd lab2_proj2.ncd lab2_proj2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab2_proj2.twx lab2_proj2.ncd -o lab2_proj2.twr lab2_proj2.pcf -ucf pinos.ucf 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/lfilus/Lab_2/proj1/code_pt1.ncd
+OUTFILE=/home/lfilus/Lab_2/proj1/code_pt1.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/lfilus/Lab_2/proj1
+LICENSE=WebPack
+USER_INFO=212985089_0_0_279

@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Apr 16 17:41:38 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "y0<5>" LOCATE = SITE "F18" LEVEL 1;
+COMP "y0<6>" LOCATE = SITE "L18" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "pausa" LOCATE = SITE "H18" LEVEL 1;
+COMP "anodo<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "anodo<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "anodo<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "anodo<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "y0<0>" LOCATE = SITE "H14" LEVEL 1;
+COMP "y0<1>" LOCATE = SITE "J17" LEVEL 1;
+COMP "rst" LOCATE = SITE "G18" LEVEL 1;
+COMP "y0<2>" LOCATE = SITE "G14" LEVEL 1;
+COMP "y0<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "y0<4>" LOCATE = SITE "D17" LEVEL 1;
+SCHEMATIC END;
+

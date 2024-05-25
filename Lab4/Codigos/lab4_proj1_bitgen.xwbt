@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\VitoriaG\Microeletronica_1\lab4_proj1\lab4_proj1.ncd
+OUTFILE=C:\VitoriaG\Microeletronica_1\lab4_proj1\lab4_proj1.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\VitoriaG\Microeletronica_1\lab4_proj1
+LICENSE=WebPack
+USER_INFO=212592691_0_0_731

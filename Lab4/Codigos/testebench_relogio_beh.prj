@@ -1,0 +1,4 @@
+vhdl work "contador.vhd"
+vhdl work "codificador_bcd.vhd"
+vhdl work "lab4_proj1.vhd"
+vhdl work "testebench_relogio.vhd"

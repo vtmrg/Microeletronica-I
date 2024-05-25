@@ -1,0 +1,100 @@
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf 
+bitgen -intstyle ise -f lab4_proj1.ut lab4_proj1.ncd 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf 
+bitgen -intstyle ise -f lab4_proj1.ut lab4_proj1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf 
+bitgen -intstyle ise -f lab4_proj1.ut lab4_proj1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f lab4_proj1.ut lab4_proj1.ncd 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f lab4_proj1.ut lab4_proj1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf -ucf pinos.ucf 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf -ucf pinos.ucf 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf -ucf pinos.ucf 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf -ucf pinos.ucf 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+xst -intstyle ise -ifn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.xst" -ofn "C:/VitoriaG/Microeletronica_1/lab4_proj1/lab4_proj1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s500e-fg320-5 lab4_proj1.ngc lab4_proj1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab4_proj1_map.ncd lab4_proj1.ngd lab4_proj1.pcf 
+par -w -intstyle ise -ol high -t 1 lab4_proj1_map.ncd lab4_proj1.ncd lab4_proj1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab4_proj1.twx lab4_proj1.ncd -o lab4_proj1.twr lab4_proj1.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f lab4_proj1.ut lab4_proj1.ncd 
