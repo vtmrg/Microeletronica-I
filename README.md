@@ -1,6 +1,6 @@
 # Microelectronics I Projects - VHDL Implementations
 
-This repository contains the projects developed for the Microelectronics I course, written in VHDL, with practical implementation using the Spartan 3E 500 FPGA.
+This repository contains the projects developed for the Microelectronics course, written in VHDL, with practical implementation using the Spartan 3E 500 FPGA.
 
 ## Description
 ### Final Project
