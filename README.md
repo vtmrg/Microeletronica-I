@@ -3,6 +3,8 @@
 This repository contains the projects developed for the Microelectronics I course, written in VHDL, with practical implementation using the Spartan 3E 500 FPGA.
 
 ## Description
+### Final Project
+- **Project:** STOP Game, using the VGA output of the Nexys 2 kit.
 
 ### Lab 1
 - **Project 1:** Multiplexer and a flip-flop.
@@ -24,5 +26,4 @@ This repository contains the projects developed for the Microelectronics I cours
 ### Lab 5
 - **Project:** Garage Door Controller.
 
-## Final Project
-- **Project:** STOP Game, using the VGA output of the Nexys 2 kit.
+
